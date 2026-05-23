@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Website</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/fev.png">
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- scrol top button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path d="M12 5L5 12H9V19H15V12H19L12 5Z" fill="currentColor" />
+    </svg>
+  </button>
+  <!-- Header -->
+  <header class="header-main-box">
+    <div class="container">
+      <div class="header-wrap">
+        <div class="nav_container">
+          <a class="logo-box" href="javascript:void(0)"><img src="assets/images/Logo.svg"
+              alt="UNIVERSITY OF ABERDEEN MUMBAI" class="logo"></a>
+          <nav>
+            <ul class="navlinks">
+              <li class="items"><a href="javascript:void(0)">Study</a></li>
+              <li class="items"><a href="javascript:void(0)">Admission</a></li>
+              <li class="items"><a href="javascript:void(0)">About Us</a></li>
+              <li class="items"><a href="javascript:void(0)">Alumni</a></li>
+              <li class="items"><a href="javascript:void(0)">Contact Us</a></li>
+              <li class="apply-btn"><button>Apply Now</button></li>
+              <li class="ion-icon" onclick="showSidebar()">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none">
+                    <path
+                      d="M8 0.5H43C47.1421 0.5 50.5 3.85786 50.5 8V28C50.5 32.1421 47.1421 35.5 43 35.5H8C3.85786 35.5 0.5 32.1421 0.5 28V8C0.5 3.85786 3.85786 0.5 8 0.5Z"
+                      fill="#1B4C61" />
+                    <path
+                      d="M8 0.5H43C47.1421 0.5 50.5 3.85786 50.5 8V28C50.5 32.1421 47.1421 35.5 43 35.5H8C3.85786 35.5 0.5 32.1421 0.5 28V8C0.5 3.85786 3.85786 0.5 8 0.5Z"
+                      stroke="#1B4C61" />
+                    <mask id="mask0_1_3042" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="6" width="24"
+                      height="24">
+                      <rect x="14" y="6" width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_1_3042)">
+                      <path d="M17 13V11H35V13H17ZM17 25V23H35V25H17ZM17 19V17H35V19H17Z" fill="white" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="sidebar">
+              <li onclick="closeSidebar()">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="20" height="20" x="0" y="0" viewBox="0 0 329.269 329"
+                    style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                    <g>
+                      <path
+                        d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.266 21.266 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.273 21.273 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                        fill="#000000" opacity="1" data-original="#000000" class=""></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="items"><a href="#">Study</a></li>
+              <li class="items"><a href="#">Admission</a></li>
+              <li class="items"><a href="#">About Us</a></li>
+              <li class="items"><a href="#">Alumni</a></li>
+              <li class="items"><a href="#">Contact Us</a></li>
+
+            </ul>
+          </nav>
+        </div>
+        <div class="bottom-header">
+          <img src="assets/images/header-logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Slider -->
+  <section class="swiper banner-slider">
+
+    <div class="swiper-wrapper">
+
+      <!-- Slide 0 -->
+      <div class="swiper-slide">
+        <div class="banner-image">
+          <img src="./assets/images/banner.jpg" alt="University campus banner">
+        </div>
+
+        <div class="banner-content">
+          <h3>Join the University of Aberdeen in India</h3>
+          <p>
+            Global challenges are waiting for new ways of thinking. Discover your true north and start creating a more
+            inclusive and sustainable world <a href="#" class="theme-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                <path
+                  d="M17.1094 8.51562L10.8594 14.7656C10.3906 15.2734 9.57031 15.2734 9.10156 14.7656C8.59375 14.2969 8.59375 13.4766 9.10156 13.0078L13.2031 8.86719H1.25C0.546875 8.86719 0 8.32031 0 7.61719C0 6.95312 0.546875 6.36719 1.25 6.36719H13.2031L9.10156 2.26562C8.59375 1.79688 8.59375 0.976562 9.10156 0.507812C9.57031 0 10.3906 0 10.8594 0.507812L17.1094 6.75781C17.6172 7.22656 17.6172 8.04688 17.1094 8.51562Z"
+                  fill="#FBCB3B" />
+              </svg>
+            </a>
+          </p>
+
+        </div>
+      </div>
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="banner-image">
+          <img src="./assets/images/banner.jpg" alt="University campus banner">
+        </div>
+
+        <div class="banner-content">
+          <h3>Join the University of Aberdeen in India 1</h3>
+          <p>
+            Global challenges are waiting for new ways of thinking. Discover your true north and start creating a more
+            inclusive and sustainable world <a href="#" class="theme-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                <path
+                  d="M17.1094 8.51562L10.8594 14.7656C10.3906 15.2734 9.57031 15.2734 9.10156 14.7656C8.59375 14.2969 8.59375 13.4766 9.10156 13.0078L13.2031 8.86719H1.25C0.546875 8.86719 0 8.32031 0 7.61719C0 6.95312 0.546875 6.36719 1.25 6.36719H13.2031L9.10156 2.26562C8.59375 1.79688 8.59375 0.976562 9.10156 0.507812C9.57031 0 10.3906 0 10.8594 0.507812L17.1094 6.75781C17.6172 7.22656 17.6172 8.04688 17.1094 8.51562Z"
+                  fill="#FBCB3B" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="banner-image">
+          <img src="./assets/images/banner.jpg" alt="University campus banner">
+        </div>
+
+        <div class="banner-content">
+          <h3>Join the University of Aberdeen in India</h3>
+          <p>
+            Global challenges are waiting for new ways of thinking. Discover your true north and start creating a more
+            inclusive and sustainable world <a href="#" class="theme-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                <path
+                  d="M17.1094 8.51562L10.8594 14.7656C10.3906 15.2734 9.57031 15.2734 9.10156 14.7656C8.59375 14.2969 8.59375 13.4766 9.10156 13.0078L13.2031 8.86719H1.25C0.546875 8.86719 0 8.32031 0 7.61719C0 6.95312 0.546875 6.36719 1.25 6.36719H13.2031L9.10156 2.26562C8.59375 1.79688 8.59375 0.976562 9.10156 0.507812C9.57031 0 10.3906 0 10.8594 0.507812L17.1094 6.75781C17.6172 7.22656 17.6172 8.04688 17.1094 8.51562Z"
+                  fill="#FBCB3B" />
+              </svg>
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+
+
+  </section>
+
+
+  <!-- About -->
+  <section class="card-box">
+    <div class="container">
+      <div class="card-container" id="card-container"></div>
+    </div>
+  </section>
+  <!-- Why Choose Aberdeen -->
+  <section class="why-choose">
+    <div class="title">
+      <h4>Why Choose Aberdeen</h4>
+    </div>
+    <p class="sub-title">Discover a campus that blends Scottish heritage with Indian innovation. A global education
+      awaits!</p>
+    <div class="container">
+      <div class="card-container" id="why-choose-card"></div>
+    </div>
+  </section>
+  <!-- Discover Aberdeen Mumbai -->
+  <section class="discover-aberdeen">
+    <div class="container">
+      <div class="title">
+        <h4>Discover Aberdeen Mumbai</h4>
+      </div>
+      <p>At the core of the Aberdeen Mumbai campus is the Graduate Research Hub, dedicated to nurturing the next
+        generation of scholars. We provide a stimulating, interdisciplinary environment where students can hone their
+        research skills and tackle pressing global issues. Our comprehensive support system and cutting-edge resources
+        empower you to excel in your field and make a lasting impact. Discover how our tailored programs can help you
+        achieve your academic and professional aspirations.</p>
+      <div class="video-wrapper">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/u7N6-aMCXlE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <!-- Our Programmes -->
+  <section class="our-programmes">
+    <div class="container">
+      <div class="title">
+        <h4>Our Programmes</h4>
+      </div>
+      <div class="card-container" id="our-programmes-container"></div>
+    </div>
+  </section>
+
+  <!-- Careers and Employability -->
+
+  <section class="about-section careers-box">
+    <div class="container">
+      <div class="title">
+        <h4>Careers and Employability</h4>
+      </div>
+      <div class="about-wrapper">
+
+        <!-- Left Image -->
+        <div class="about-image">
+          <img src="./assets/images/careers-img.jpg" alt="Students studying at Aberdeen Mumbai">
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+            a galley of type and scrambled it to make a type specimen book.</p>
+
+          <a href="javascript:void(0)" class="theme-btn-box">
+            See More
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Ready to Move Forward? -->
+  <section class="ready-to-move-forward">
+    <div class="container">
+      <div class="forward-box">
+        <div class="forward-left-box">
+          <div class="forward-img-box">
+            <img src="assets/images/Scholars.png" alt="Ready to Move Forward?" />
+          </div>
+        </div>
+        <div class="forward-right-box">
+          <div class="title">
+            <h4>Discover Aberdeen Mumbai</h4>
+          </div>
+          <p>Connect with Aberdeen's global network. From Mumbai to Madrid, our alumni are leaders in their fields,
+            ready to support your journey.</p>
+          <a href="javascript:void(0)" class="theme-btn-box">
+            Enquire Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Students Life at Aberdeen -->
+  <section class="why-choose life-box">
+    <div class="title">
+      <h4>Students Life at Aberdeen</h4>
+    </div>
+    <p class="sub-title">Discover a campus that blends Scottish heritage with Indian innovation. A global education
+      awaits!</p>
+    <div class="container">
+      <div class="card-container" id="Life-card"></div>
+    </div>
+  </section>
+  <!-- Discover Our Alumni -->
+  <section class="about-section careers-box">
+    <div class="container">
+      <div class="title">
+        <h4>Discover Our Alumni</h4>
+      </div>
+      <div class="about-wrapper">
+
+        <!-- Left Image -->
+        <div class="about-image">
+          <img src="./assets/images/discover.jpg" alt="About">
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+            a galley of type and scrambled it to make a type specimen book.</p>
+
+          <a href="javascript:void(0)" class="theme-btn-box">
+            See More
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Latest News -->
+  <div class="news-box">
+    <div class="container">
+      <div class="title">
+        <h4>Latest News</h4>
+      </div>
+      <div class="news-main-box">
+        <div class="news-left-box news-main-box-item">
+          <div class="card-container">
+            <div class="card-wrap-box">
+              <div class="card"><img src="./assets/images/news-1.jpg" alt="Undergraduate Programmes"></div>
+              <div class="card-content">
+                <h4>New Global Scholars Program</h4>
+                <p>Announcing the New Global Scholars Program, designed to empower students on their academic paths.
+                  This prestigious program emphasizes the importance of global citizenship and offers generous financial
+                  assistance, personalized mentorship, and a vibrant community of accomplished alumni.</p>
+                <a href="#" class="see-more-btn">
+                  <span>Read more about the Global Scholars Program</span>
+                  <span class="arrow-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                      <path
+                        d="M17.1094 8.51562L10.8594 14.7656C10.3906 15.2734 9.57031 15.2734 9.10156 14.7656C8.59375 14.2969 8.59375 13.4766 9.10156 13.0078L13.2031 8.86719H1.25C0.546875 8.86719 0 8.32031 0 7.61719C0 6.95312 0.546875 6.36719 1.25 6.36719H13.2031L9.10156 2.26562C8.59375 1.79688 8.59375 0.976562 9.10156 0.507812C9.57031 0 10.3906 0 10.8594 0.507812L17.1094 6.75781C17.6172 7.22656 17.6172 8.04688 17.1094 8.51562Z"
+                        fill="#5f5633"></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-right-box news-main-box-item">
+          <div class="news-wrap">
+            <div class="item-box">
+              <div class="wrap">
+                <div class="item-img">
+                  <img src="assets/images/news-2.jpg" alt="University of Toronto" />
+                </div>
+              </div>
+              <div class="item-con">
+                <p>University of Toronto launches new research initiative focused on sustainable energy solutions</p>
+              </div>
+            </div>
+            <div class="item-box">
+              <div class="wrap">
+                <div class="item-img">
+                  <img src="assets/images/news-3.jpg" alt="niversity of Toronto" />
+                </div>
+              </div>
+              <div class="item-con">
+                <p>University of Toronto launches new research initiative focused on sustainable energy solutions</p>
+              </div>
+            </div>
+            <div class="item-box">
+              <div class="wrap">
+                <div class="item-img">
+                  <img src="assets/images/news-4.jpg" alt="Harvard University" />
+                </div>
+              </div>
+              <div class="item-con">
+                <p>Stanford researchers publish groundbreaking study on artificial intelligence ethics</p>
+              </div>
+            </div>
+            <div class="item-box">
+              <div class="wrap">
+                <div class="item-img">
+                  <img src="assets/images/news-5.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item-con">
+                <p>MIT announces partnership with local industries to enhance student internship programs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Feeling Inspired? -->
+  <section class="ready-to-move-forward">
+    <div class="container">
+      <div class="forward-box">
+        <div class="forward-left-box">
+          <div class="forward-img-box">
+            <img src="assets/images/Scholars.png" alt="Ready to Move Forward?" />
+          </div>
+        </div>
+        <div class="forward-right-box">
+          <div class="title">
+            <h4>Feeling Inspired?</h4>
+          </div>
+          <p>Connect with Aberdeen's global network. From Mumbai to Madrid, our alumni are leaders in their fields,
+            ready to support your journey.</p>
+          <a href="javascript:void(0)" class="theme-btn-box">
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer-section">
+
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- Left Content -->
+        <div class="footer-left">
+
+          <a href="#" class="footer-logo">
+            <img src="./assets/images/footer-log.svg" alt="Logo">
+          </a>
+
+          <div class="footer-info">
+            <p>
+              The University of Aberdeen <br>
+              India Location, <br>
+              Mumbai
+            </p>
+
+            <a href="tel:+911212121212">
+              Tel: +91-1212121212
+            </a>
+          </div>
+
+          <ul class="footer-links">
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+
+            <li>
+              <a href="#">Student Policies</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- Right Social -->
+        <div class="footer-social">
+
+          <h4>Connect With Us</h4>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#">
+                <img src="./assets/images/Twitter.svg" alt="">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/images/Instagram.svg" alt="">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/images/Linkedin.svg" alt="">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <ul class="footer-bottom-links">
+
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+
+          <li>
+            <a href="#">Accessibility</a>
+          </li>
+
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+
+        </ul>
+
+        <p>
+          © University of Aberdeen
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
